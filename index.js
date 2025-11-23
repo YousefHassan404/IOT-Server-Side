@@ -74,6 +74,13 @@ app.get('/api/sensors', (req, res) => {
   res.json({ ok: true, sensors: bySensor });
 });
 
+// welcome endpoint
+app.get('/', (req, res) => {
+  res.send('Welcome to backend of the IOT client server');
+});
+
+
+
 // Socket.IO connection
 io.on('connection', socket => {
   console.log('Client connected', socket.id);
@@ -84,6 +91,8 @@ io.on('connection', socket => {
     console.log('Client disconnected', socket.id);
   });
 });
+
+
 
 const PORT = process.env.PORT || 4000;
 server.listen(PORT, () => {

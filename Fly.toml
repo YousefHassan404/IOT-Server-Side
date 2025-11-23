@@ -1,0 +1,6 @@
+[[services]]
+  internal_port = 4000
+  protocol = "tcp"
+  [[services.ports]]
+    handlers = ["http"]
+    port = 80
