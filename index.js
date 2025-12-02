@@ -256,7 +256,12 @@ io.on('connection', socket => {
   });
 });
 
+<<<<<<< HEAD
 //==================== Start Server ====================//
+=======
+
+
+>>>>>>> 7b7d0ba7729779933de9d266352f1c89b3d62d64
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
   console.log(`Backend listening on http://localhost:${PORT}`);
